@@ -1,0 +1,71 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0rem;
+  padding: 0rem;
+  font-family: 'Roboto', sans-serif;
+  --light-bg-col:#F2E2E2;
+  --light-prim-font-col:#191717;
+  --accent-font-col:#5454F7;
+  --dark-bg-col:var(--light-prim-font-col);
+  --dark-prim-font-col:var(--light-bg-col);
+}
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.mobile-menu{
+  position: fixed;
+  z-index:1000;
+}
+
+.menu{
+position: fixed;
+background-color: white;
+font-weight: 600;
+font-size: 2rem;
+text-transform: capitalize;
+top: 0;
+left:0;
+height: 100%;
+width: 80%;
+z-index: 50;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items:flex-start;
+gap:2rem;
+padding-left: 1.5rem;
+}
+.menu ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 4rem;
+  gap:3rem;
+  padding: 0;
+}
+
+.menuMask{
+  position: fixed;
+  background-color:var(--light-prim-font-col);
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  opacity: 70%;
+}
+
+.download{
+  color:var(--accent-font-col);
+  border: solid 1px var(--accent-font-col);
+  width: fit-content;
+  font-size: 2rem;
+  padding: 1rem;
+}
