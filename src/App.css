@@ -1,3 +1,7 @@
+html{
+  box-sizing: border-box;
+}
+
 
 #root {
   max-width: 1280px;
@@ -25,6 +29,7 @@ header{
 
 .menu{
 position: fixed;
+overflow: hidden;
 background-color: white;
 font-weight: 600;
 font-size: 2rem;
@@ -53,13 +58,13 @@ padding-left: 1.5rem;
 
 .menuMask{
   position: fixed;
-  background-color:var(--light-prim-font-col);
+  background-color:#fff;
   top:0;
   left:0;
   height: 100%;
   width: 100%;
   z-index: 50;
-  opacity: 70%;
+  opacity: 15%;
 }
 
 .download{
@@ -68,4 +73,95 @@ padding-left: 1.5rem;
   width: fit-content;
   font-size: 2rem;
   padding: 1rem;
+}
+
+.Hero{
+  height:30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner-Hero h1{
+  text-transform: capitalize;
+  margin-bottom: 0rem;
+}
+.inner-Hero h4{
+  font-size: 0.8rem;
+  margin:0.5rem 0 0rem 0;
+}
+ span{
+  color: var(--accent-font-col);
+}
+
+
+
+.inner-Hero{
+  position: relative;
+  height: 22%;
+  width: fit-content;
+  max-width: 410px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0.5rem 0.5rem 4.5rem 0.5rem;
+  box-shadow:  6px 6px  26px rgba(0, 0, 0, 0.2);
+
+
+}
+.inner-Hero>img{
+  position: absolute;
+  z-index: -1;
+}
+
+/* top left svg */
+.inner-Hero :nth-child(3){
+  bottom: 4rem;
+right: 17rem;
+}
+/* bottom left svg */
+.inner-Hero :nth-child(4){
+  top: 9rem;
+  right:  18rem;
+}
+/* center top svg */
+.inner-Hero :nth-child(5){
+  bottom: 5rem;
+  left: 5rem;
+}
+
+/* center bottom svg */
+.inner-Hero :nth-child(6){
+  top: 7rem;
+  left: 7rem;
+}
+
+/* top right svg */
+.inner-Hero :nth-child(7){
+  bottom: 4.5rem;
+  left: 19.25rem;
+}
+
+/* bottom right SVG */
+.inner-Hero :nth-child(8){
+  top: 7rem;
+  left:18.5rem
+}
+
+.mainText{
+  margin:0 1rem 1rem 0;
+  text-align: left;
+  word-break: break-word;
+}
+.about picture{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+
+.profileImage{
+  border-radius: 38px;
+
 }

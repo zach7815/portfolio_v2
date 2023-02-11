@@ -28,14 +28,13 @@ function Navigation(){
 
     return (
         <>
-            <FontAwesomeIcon
+        <FontAwesomeIcon
        icon={faBars}
        className="mobile-menu"
        size="2x"
        onClick={()=>{setShowMenu(!showMenu)}}
        />
         <nav className="nav">
-
        {menuMask}
        {menu}
 
