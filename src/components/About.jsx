@@ -9,7 +9,7 @@ export default function About(){
     return(
         <>
             <section className="about">
-                <h1>About</h1>
+                <h2>About</h2>
                 <p className="mainText">
                 Born in the UK, I am now living and working in Hong Kong.
                 My interest in  <span>Web development came in 2017 </span> where as a teacher we had to manage our own class page on the website.

@@ -165,3 +165,90 @@ right: 17rem;
   border-radius: 38px;
 
 }
+.skills{
+  display: grid;
+  grid: 33% / auto auto auto;
+  place-items: center;
+  text-align: center;
+  gap:1rem;
+
+}
+
+.skills h4{
+  margin:0;
+}
+
+.skill{
+  border:  solid black 1px;
+  padding:0.5rem 1rem 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+
+
+svg{
+  height: 100%;
+  width: 100%;
+  fill: black;
+}
+
+
+
+/* JS Logo #E9D91F */
+/*  HTML hover #F43B00 */
+
+/* JS Logo */
+div.skill:nth-child(1) > svg:nth-child(1) > path:nth-child(1):hover{
+  fill:#E9D91F;
+}
+
+div.skill:nth-child(2) > svg:nth-child(1) > path:nth-child(5):hover{
+  fill:#F43B00;
+}
+
+div.skill:nth-child(3) > svg:nth-child(1) > path:nth-child(1):hover{
+  fill:#008BF3;
+}
+
+/*  node hover color #81cf08; */
+/* #45493D */
+
+/* , div.skill svg#Lager_1 path */
+
+/* node JS logo */
+#Lager_1 > path:nth-child(2){
+  fill:black;
+}
+ div.skill svg#Lager_1 path.st1{
+  fill:white;
+ }
+
+
+
+ div.skill svg#Lager_1:hover>.st1{
+  fill:#81cf08;
+ }
+
+
+/* Sass logo */
+div.skill:nth-child(5) > svg:nth-child(1) > circle:nth-child(1){
+  fill: black;
+}
+
+
+
+div.skill:nth-child(5) > svg:nth-child(1) > circle:nth-child(1):hover{
+fill:#DA5799;
+}
+
+
+/* React Logo */
+
+div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1)>*{
+  fill:black;
+}
+
+div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1):hover>*
+{
+  fill:#61dafb;
+}
