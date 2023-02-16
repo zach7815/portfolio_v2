@@ -13,7 +13,7 @@ export default function(){
         <section className="Hero">
             <div className="inner-Hero">
                 <h1>hi i'm zach</h1>
-                    <h4>I am a <span> Self Taught Developer</span> who is loves to learn and <br/> build
+                    <h4>I am a <span className="highlight"> Self Taught Developer</span> who is loves to learn and <br/> build
                     things.</h4>
                     <img src={leftTop} alt="Your SVG" />
                     <img src={leftBottom} alt="Your SVG" />

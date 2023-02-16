@@ -16,7 +16,7 @@ return (
 
         {/* skill one */}
         <div className="skill">
-        <JsSVG height="75px" width="75px" />
+        <JsSVG/>
         <h4>Javascript</h4>
         </div>
         {/* skill 2 */}
