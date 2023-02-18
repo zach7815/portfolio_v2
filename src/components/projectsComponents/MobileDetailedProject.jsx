@@ -1,12 +1,15 @@
 import React from "react";
 import mobileProfImg from "/src/images/mobile-profile-Img.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-function FullWidthProject(){
+
+function MobileDetailedProject(){
 
     return (
         <div className="projectContainer">
         <h3> Dummy Header</h3>
-        <img src={mobileProfImg} alt="dummy image"/>
         <p>A weather dashboard that uses React, Node JS, React and three different APIs. The Weather app displays the users current locations current weather and next 5 days weather.</p>
         <h4>Top 3 features</h4>
         <ul>
@@ -14,6 +17,7 @@ function FullWidthProject(){
             <li>feature 2</li>
             <li>feature 3</li>
         </ul>
+        <img src={mobileProfImg} alt="dummy image"/>
         <h4>Technologies used</h4>
         <div className="technologies">
         <span className="tech">tech one </span>
@@ -24,7 +28,7 @@ function FullWidthProject(){
         </div>
 <div className="projectbtn">
 <button>Live Site</button>
-    <button>Github</button>
+    <button>  <FontAwesomeIcon icon={faGithub} />Github</button>
 </div>
 
 
@@ -34,4 +38,4 @@ function FullWidthProject(){
 
 }
 
-export default FullWidthProject;
+export default MobileDetailedProject;

@@ -1,12 +1,13 @@
 import React from "react";
-import FullWidthProject from "./projectsComponents/FullWidthProject";
+import MobileDetailedProject from "./projectsComponents/MobileDetailedProject";
+
 
 function Project(){
     return(
         <>
             <section className="projectSection">
                 <h2>Project</h2>
-                <FullWidthProject/>
+                <MobileDetailedProject/>
             </section>
 
         </>

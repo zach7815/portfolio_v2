@@ -1,7 +1,6 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { useTransition, animated } from '@react-spring/web'
 import { useState } from "react";
 
 function Navigation(){
