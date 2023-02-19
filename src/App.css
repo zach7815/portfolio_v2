@@ -5,8 +5,6 @@ html{
 
 #root {
   max-width: 1280px;
-  margin: 0rem;
-  padding: 0rem;
   font-family: 'Roboto', sans-serif;
   --light-bg-col:#F2E2E2;
   --light-prim-font-col:#191717;
@@ -17,6 +15,9 @@ html{
 
 h1,h2,h3,h4{
   text-transform: capitalize;
+}
+h2,h3, .about p, .projectContainer, .smallProjCard{
+  margin-left:1rem;
 }
 
 header{
@@ -30,11 +31,7 @@ header{
   z-index:1000;
 }
 
-.fa-bars{
-  position: relative;
-  left:-1rem;
 
-}
 .menu{
 position: fixed;
 overflow: hidden;
@@ -178,8 +175,9 @@ right: 17rem;
   grid: 33% / auto auto auto;
   place-items: center;
   text-align: center;
-  gap:1rem;
+  gap:0.5rem;
   margin:0 0 3rem 0;
+
 
 }
 
@@ -191,14 +189,19 @@ right: 17rem;
   border:  solid black 1px;
   padding:0.5rem 1rem 0.5rem 1rem;
   border-radius: 20px;
-  width:20vw;
+  width: fit-content;
+}
+.skill:nth-child(1){
+  font-size: 0.9rem;
+  padding:0.5rem 0.8rem 0.5rem 0.8rem;
 }
 
-
+ .about p{
+margin-left: 1rem;
+}
 
 svg{
-  height:50%;
-  width:20vw;
+  width:14vw;
   fill: black;
 
 }
@@ -206,7 +209,6 @@ svg{
 
 
 /* JS Logo #E9D91F */
-/*  HTML hover #F43B00 */
 
 /* JS Logo */
 div.skill:nth-child(1) > svg:nth-child(1) > path:nth-child(1):hover{
@@ -278,7 +280,7 @@ div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1):hover>*
   box-shadow:6px 6px 29px #bfbfbfeb;
   width:80%;
   padding: 1rem;
-  align-self: center;
+
 }
 
 .projectContainer img{
@@ -346,8 +348,83 @@ div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1):hover>*
   font-weight: 700;
   cursor: pointer;
 }
+.projectbtn >*:hover{
+  background-color: var(--accent-font-col);
+  color: white;
+}
 
 .fa-github{
   width:1rem;
   margin-right: 0.5rem;
+}
+.smallProjCard{
+  border: solid 1px black;
+  height: 110%;
+  width: 88%;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+.smallProjCard svg{
+  width: 8vw;
+}
+.smallProjCard svg:nth-child(1){
+  height: 1.5rem;
+}
+
+
+.iconsRight svg:nth-child(1),
+.smallProjCard svg:nth-child(2)
+{
+  height: 1rem;
+  cursor: pointer;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+  padding:1rem;
+}
+.smallProjCard p{
+  margin:1rem;
+}
+.smallPtech{
+  padding:0 0 0 1rem;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.contact h5, h3{
+  margin-bottom: 0;
+}
+
+
+.contact h5{
+  color: var(--accent-font-col);
+align-self: center;
+}
+
+.contact h3{
+  margin-left: 0;
+}
+.contact p{
+  width: 80%;
+  align-self: center;
+}
+
+.contact a{
+  border: solid 2px var(--accent-font-col);
+  width: fit-content;
+  align-self: center;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover{
+  background-color: rgb(104, 104, 248, .53);
+  border-radius: 5px;
 }

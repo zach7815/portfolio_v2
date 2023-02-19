@@ -1,7 +1,6 @@
 import React from "react";
 import mobileProfImg from "/src/images/mobile-profile-Img.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 

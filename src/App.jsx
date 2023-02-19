@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Skills from "./components/Skills"
 import Project from "./components/Project.jsx"
+import Contact from './components/projectsComponents/Contact'
 
 import './App.css'
 
@@ -17,6 +18,7 @@ function App() {
     <About/>
     <Skills/>
     <Project/>
+    <Contact/>
     </div>
   )
 }
