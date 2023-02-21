@@ -1,6 +1,9 @@
 import * as React from "react"
+import { useTheme } from "../ThemeContext"
 
 function ExternalLink(props) {
+const darkTheme=useTheme();
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -12,8 +15,8 @@ function ExternalLink(props) {
       <g
         data-name="8666682_external_link_icon"
         transform="translate(-2 -1.567)"
-        fill="none"
-        stroke="#000"
+        fill={darkTheme?"black":"white"}
+        stroke={darkTheme?"white":"black"}
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}

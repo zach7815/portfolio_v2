@@ -2,10 +2,22 @@ import React from "react";
 import SmallGithub from "../JSXicons/githubSmall";
 import DocumentIcon from "./documentIcon";
 import ExternalLink from "./externalSite";
+import {useTheme} from '../ThemeContext.jsx'
+
 
 function SmallProjectCard(){
+
+    const darkTheme = useTheme();
+    const smallCardStyling={
+        border:darkTheme?"solid 1px #F2E2E2":"solid 1px #707070",
+    }
+
+    const externalSiteSvg={
+        fill:darkTheme?"black":"white",
+        stroke:darkTheme?"white":"black"
+    }
     return (
-        <div className="smallProjCard">
+        <div className="smallProjCard" style={smallCardStyling}>
         <div className="icons">
         <DocumentIcon/>
         <div className="iconsRight">
