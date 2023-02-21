@@ -12,18 +12,17 @@ function SmallProjectCard(){
         border:darkTheme?"solid 1px #F2E2E2":"solid 1px #707070",
     }
 
-    const externalSiteSvg={
-        fill:darkTheme?"black":"white",
-        stroke:darkTheme?"white":"black"
+    const svgStyling={
+        fill:darkTheme?"white":"black",
     }
     return (
         <div className="smallProjCard" style={smallCardStyling}>
         <div className="icons">
-        <DocumentIcon/>
+        <DocumentIcon style={svgStyling}/>
         <div className="iconsRight">
 
 
-       <a href="" target="blank"><SmallGithub/></a>
+       <a href="" target="blank"><SmallGithub style={svgStyling}/></a>
        <a href="" target="blank"><ExternalLink/></a>
         </div>
         </div>

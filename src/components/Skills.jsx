@@ -5,13 +5,23 @@ import CSSLogo from "./JSXicons/CSsSvg"
 import Nodelogo from "./JSXicons/NodeSVG"
 import SassLogo from "./JSXicons/SassSVG"
 import ReactLogo from "./JSXicons/ReactSVG"
+import {useTheme} from './ThemeContext.jsx'
 
 function Skills(){
+    const darkTheme = useTheme();
+
+    const darkStyle={
+        backgroundColor: darkTheme?"#272020": "#FFF",
+        color:darkTheme?"#E7D7D7":"#191717",
+    }
+    const svgStyle={
+        fill:darkTheme?"#FFF":"#272020",
+    }
 
 return (
-    <section>
+    <section style={darkStyle}>
         <h2> Skills</h2>
-        <div className="skills">
+        <div className="skills" style={svgStyle}>
 
 
         {/* skill one */}
@@ -33,7 +43,7 @@ return (
         </div>
 
         <div className="skill">
-        <Nodelogo/>
+        <Nodelogo style={svgStyle}/>
         <h4>Node JS</h4>
         </div>
 

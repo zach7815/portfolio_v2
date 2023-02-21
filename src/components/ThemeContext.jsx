@@ -7,10 +7,11 @@ export function useTheme() {
   return useContext(ThemeContext);
 }
 
+
+
 export function useThemeUpdate() {
   return useContext(ThemeUpdateContext);
 }
-
 export function ThemeProvider({ children }) {
   const [darkTheme, setDarkTheme] = useState(false);
 

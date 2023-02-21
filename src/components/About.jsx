@@ -1,14 +1,20 @@
 import React from "react";
 import profileImg from "../images/desktop-profile-Img.png"
 import mobileProfImg from "../images/mobile-profile-Img.png"
-
+import  {useTheme} from "./ThemeContext"
 
 
 export default function About(){
+    const darkTheme=useTheme();
+
+    const darkStyle={
+        backgroundColor: darkTheme?"#272020": "#FFF",
+        color:darkTheme?"#E7D7D7":"#191717",
+    }
 
     return(
         <>
-            <section className="about">
+            <section className="about" style={darkStyle}>
                 <h2>About</h2>
                 <p className="mainText">
                 Born in the UK, I am now living and working in Hong Kong.

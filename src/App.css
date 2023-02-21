@@ -1,8 +1,14 @@
 body{
   box-sizing: border-box;
   margin:0;
+  padding: 0;
 }
 
+.App{
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+}
 
 #root {
   max-width: 1280px;
@@ -25,6 +31,10 @@ header{
   display: flex;
   justify-content: space-between;
   align-content: flex-start;
+}
+
+.fa-bars{
+  margin-top:0.5rem
 }
 
 /* toggle css */
@@ -154,6 +164,7 @@ padding-left: 1.5rem;
   align-items: center;
   position: relative;
   overflow: hidden;
+  z-index: -4;
 }
 
 .inner-Hero h1{
@@ -166,6 +177,7 @@ padding-left: 1.5rem;
 }
  .highlight{
   color: var(--accent-font-col);
+  font-weight: 600;
 }
 
 
@@ -290,32 +302,21 @@ div.skill:nth-child(3) > svg:nth-child(1) > path:nth-child(1):hover{
   fill:#008BF3;
 }
 
-/*  node hover color #81cf08; */
-/* #45493D */
-
-/* , div.skill svg#Lager_1 path */
-
-/* node JS logo */
-div.skill:nth-child(4) > svg:nth-child(1) > path:nth-child(1){
-  fill:black;
-}
-div.skill:nth-child(4) > svg:nth-child(1)>* {
-  fill:white;
- }
 
 
-
- div.skill:nth-child(4) > svg:nth-child(1):hover>*{
+/* div.skill:nth-child(4) > svg:nth-child(1) > path:nth-child(2):hover{
   fill:#81cf08;
- }
+} */
+html body div#root div.App section div.skills div.skill svg:hover path:nth-child(2),
+html body div#root div.App section div.skills div.skill svg:hover path:nth-child(3)
+{
+  fill:#81cf08;
+}
+
+
 
 
 /* Sass logo */
-div.skill:nth-child(5) > svg:nth-child(1) > circle:nth-child(1){
-  fill: black;
-}
-
-
 
 div.skill:nth-child(5) > svg:nth-child(1) > circle:nth-child(1):hover{
 fill:#DA5799;
@@ -324,9 +325,7 @@ fill:#DA5799;
 
 /* React Logo */
 
-div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1)>*{
-  fill:black;
-}
+
 
 div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1):hover>*
 {
@@ -339,6 +338,7 @@ div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1):hover>*
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom:1rem;
 }
 
 .projectContainer{
@@ -429,7 +429,7 @@ div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1):hover>*
   border: solid 1px black;
   height: 110%;
   width: 88%;
-  margin-top: 1rem;
+  margin: 1rem 0 2rem 1rem;
   border-radius: 5px;
 }
 .smallProjCard svg{
@@ -466,6 +466,9 @@ div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1):hover>*
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin-top: -1rem;
+  padding-bottom: 2rem;
+
 }
 .contact h5, h3{
   margin-bottom: 0;

@@ -6,15 +6,21 @@ import centreBottom from "../assets/mobile_SVG/CentreBottom.svg"
 import rightTop from "../assets/mobile_SVG/rightTop.svg"
 import rightBottom from "../assets/mobile_SVG/rightBottom.svg"
 
+import { useTheme } from "./ThemeContext";
+
 
 export default function(){
+    const darkTheme=useTheme();
+    const darkStyle={
+        backgroundColor: darkTheme?"#272020": "#FFF",
+    }
 
     return(
-        <section className="Hero">
+        <section className="Hero" style={darkStyle}>
             <div className="inner-Hero">
                 <h1>hi i'm zach</h1>
-                    <h4>I am a <span className="highlight"> Self Taught Developer</span> who is loves to learn and <br/> build
-                    things.</h4>
+                    <p>I am a <span className="highlight"> Self Taught Developer</span> who is loves to learn and <br/> build
+                    things.</p>
                     <img src={leftTop} alt="Your SVG" />
                     <img src={leftBottom} alt="Your SVG" />
                     <img src={centreTop} alt="Your SVG" />

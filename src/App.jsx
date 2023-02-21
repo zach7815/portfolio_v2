@@ -10,18 +10,20 @@ import './App.css'
 
 
 
+
 function App() {
   return (
-    <div className="App">
-     <ThemeProvider>
+    <ThemeProvider>
+    <div className="App" >
+
     <Header/>
     <Hero  />
     <About />
     <Skills />
     <Project />
     <Contact />
-    </ThemeProvider>
     </div>
+   </ThemeProvider>
   )
 }
 
