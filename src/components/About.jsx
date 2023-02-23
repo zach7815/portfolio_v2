@@ -26,7 +26,7 @@ export default function About(){
                 </p>
                 <picture>
                 <source srcSet={mobileProfImg}
-            media="(min-width: 375px)"/>
+            media="(min-width: 200px)"/>
                 <img className="profileImage" id="profImg" src={profileImg} alt="An image of Zach petting a dog"/>
 
                     </picture>
