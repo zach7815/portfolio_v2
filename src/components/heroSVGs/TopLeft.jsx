@@ -6,6 +6,7 @@ function TopLeft(props) {
       xmlns="http://www.w3.org/2000/svg"
       width={69.624}
       height={79.145}
+      fill="#7575FA"
       viewBox="0 0 69.624 79.145"
       {...props}
     >

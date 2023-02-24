@@ -42,9 +42,9 @@ function Navigation(){
        onClick={()=>{setShowMenu(!showMenu)}}
        />
         <nav className="nav">
+
        {menuMask}
        {menu}
-
        </nav>
         </>
 

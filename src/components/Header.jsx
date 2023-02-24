@@ -1,7 +1,8 @@
 import React from "react";
-import Navigation from "./Navigation";
+import MobileNavigation from "./MobileNavigation";
 import { useTheme} from "./ThemeContext";
 import Toggle from "./Toggle";
+import DesktopNavigation from "./projectsComponents/DeskTop Navigation";
 
 
 
@@ -16,7 +17,8 @@ export default function Header(){
     return(
 
             <header style={darkStyle}>
-            <Navigation/>
+            <MobileNavigation/>
+            <DesktopNavigation />
             <Toggle/>
             </header>
 

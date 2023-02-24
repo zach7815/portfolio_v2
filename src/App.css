@@ -32,6 +32,24 @@ header{
   align-content: flex-start;
 }
 
+.deskNav ul{
+  display: flex;
+ list-style: none;
+ gap:2rem;
+ font-size: 1.4rem;
+ margin: 0.5rem;
+ font-weight: 500;
+}
+.deskNav ul a{
+  text-decoration: none;
+  color: inherit
+}
+
+.deskNav ul li:hover{
+  color: var(--accent-font-col);
+  cursor: pointer;
+}
+
 .fa-bars{
   margin-top:0.5rem
 }
@@ -201,31 +219,35 @@ padding-left: 1.5rem;
 
 
 
-/* top left svg */
+/* bottom left svg */
 .inner-Hero :nth-child(3){
   top: 15rem;
   right: 38rem;
   width:clamp(1rem, 8vw, 6rem);
 }
-/* bottom left svg */
+/* top left svg */
 .inner-Hero :nth-child(4){
-  top: -1rem;
-  left: -3rem;
-  width: clamp(2rem, 15vw, 12rem);
+  top: -2rem;
+left: -8rem;
+width: 17vw;
+height: 17vw;
 }
 /* center top svg */
 .inner-Hero :nth-child(5){
-  bottom: 10.5rem;
-  left: 18rem;
-  width:clamp(2rem, 15vw, 12rem);
+  bottom: 5.5rem;
+  left: 7rem;
+  width: clamp(2rem, 15vw, 12rem);
+  height: 24vh;
+  fill: #7C7CFC;
+  width: 24vw;
 }
 
 /* center bottom svg */
 .inner-Hero :nth-child(6){
-  top: 11.5rem;
-  left: 16rem;
-  width: 15vw;
-  height: 15vw;
+    top: 11rem;
+    left: 7rem;
+    width: 20vh;
+    height: 20vw;
 }
 
 /* top right svg */
@@ -441,9 +463,9 @@ div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1):hover>*
 }
 .smallProjCard{
   border: solid 1px black;
-  height: 110%;
-  width: 88%;
-  margin: 1rem 0 2rem 1rem;
+  height: fit-content;
+  width: fit-content;
+  margin: 1rem 1rem 2rem 1rem;
   border-radius: 5px;
 }
 .smallProjCard svg{
@@ -481,7 +503,8 @@ div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1):hover>*
   flex-direction: column;
   text-align: center;
   margin-top: -1rem;
-  padding-bottom: 2rem;
+  padding: 5rem;
+
 
 }
 .contact h5, h3{
@@ -516,12 +539,106 @@ align-self: center;
   border-radius: 5px;
 }
 
-@media screen and (min-width:616px){
-  /* center bottom */
-   .inner-Hero :nth-child(6){
-    top:10.5rem
+
+/* media queries */
+
+@media  screen and (min-width:530px) {
+  .inner-Hero :nth-child(6){
+    top:10rem
   }
 }
+
+
+
+@media screen and (min-width:656px){
+  /* center bottom */
+   .inner-Hero :nth-child(6){
+    top:9rem;
+    left:13rem;
+  }
+  .inner-Hero :nth-child(5){
+    left:13rem;
+  }
+}
+
+
+@media screen and (min-width:865px){
+  /* center bottom */
+   .inner-Hero :nth-child(6){
+    top:9rem;
+    left:13rem;
+  }
+  .inner-Hero :nth-child(5){
+    left:13rem;
+  }
+  .aboutContents{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap:6rem;
+  }
+  .aboutText{
+    width: 50%;
+    font-size: 1.4rem;
+  }
+  .aboutText p{
+    margin-left:0;
+  }
+  .aboutContents picture{
+    margin:0
+  }
+  .fa-bars{
+    display: none;
+  }
+}
+
+@media screen and (min-width:990px){
+  /* center bottom */
+   .inner-Hero :nth-child(6){
+    top:7.5rem;
+  }
+  .skills{
+    gap:3rem
+  }
+
+  .smallPContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+  }
+
+
+}
+
+@media screen and (min-width:1200px){
+  .aboutText{
+    font-size: 1.7rem;;
+  }
+   /* center bottom */
+   .inner-Hero :nth-child(6){
+    top:5.5rem;
+  }
+  .inner-Hero{
+    height:25%;
+  }
+}
+
+@media screen and (min-width:1628px){
+  .aboutText{
+    font-size: 1.8rem;;
+  }
+   /* center bottom */
+   /* .inner-Hero :nth-child(6){
+    top:3.5rem;
+  } */
+  .inner-Hero{
+    height:28%;
+  }
+}
+
+
 
 
 @media screen and (min-width:826px) {
@@ -536,10 +653,7 @@ align-self: center;
   .inner-Hero :nth-child(8){
     right:-4.75rem;
   }
-  .inner-Hero :nth-child(6){
-    top: 9rem;
-    left: 18rem;
-  }
+
 
 }
 @media screen and (max-width:923px) {
