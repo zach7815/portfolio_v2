@@ -1,5 +1,5 @@
 import React from "react";
-import mobileProfImg from "/src/images/mobile-profile-Img.png"
+import mobileProfImg from "/src/images/WeatherDB_screenshot.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {useTheme} from '../ThemeContext'
@@ -21,6 +21,7 @@ function MobileDetailedProject(){
 
     return (
         <div className="projectContainer" style={bigCardStyling}>
+        <div className="projDetail">
         <h3> Dummy Header</h3>
         <p>A weather dashboard that uses React, Node JS, React and three different APIs. The Weather app displays the users current locations current weather and next 5 days weather.</p>
         <h4>Top 3 features</h4>
@@ -29,7 +30,9 @@ function MobileDetailedProject(){
             <li>feature 2</li>
             <li>feature 3</li>
         </ul>
+        </div>
         <img src={mobileProfImg} alt="dummy image"/>
+        <div className="stack">
         <h4>Technologies used</h4>
         <div className="technologies">
         <span className="tech">tech one </span>
@@ -37,6 +40,7 @@ function MobileDetailedProject(){
         <span className="tech">tech three </span>
         <span className="tech">tech four </span>
         <span className="tech">tech five </span>
+        </div>
         </div>
 <div className="projectbtn" style={colorStyling}>
 <button>Live Site</button>

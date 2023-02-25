@@ -2,7 +2,7 @@ import React from "react";
 import MobileNavigation from "./MobileNavigation";
 import { useTheme} from "./ThemeContext";
 import Toggle from "./Toggle";
-import DesktopNavigation from "./projectsComponents/DeskTop Navigation";
+import DesktopNavigation from "./DeskTop Navigation";
 
 
 

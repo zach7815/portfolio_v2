@@ -18,7 +18,7 @@ function SmallProjectCard(){
     return (
         <div className="smallProjCard" style={smallCardStyling}>
         <div className="icons">
-        <DocumentIcon style={svgStyling}/>
+        <DocumentIcon style={svgStyling} className="docIcon"/>
         <div className="iconsRight">
 
 

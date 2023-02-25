@@ -17,13 +17,11 @@ function Project(){
 
     return(
         <>
-            <section style={darkStyle
-            } className="projectSection">
-                <h2>Project</h2>
+            <section style={darkStyle } className="projectSection" id="projects">
+                <h2>Projects</h2>
                 <MobileDetailedProject/>
                 <h3>Other Noteworthy Projects</h3>
                 <div className="smallPContainer">
-                <SmallProjectCard />
                 <SmallProjectCard />
                 <SmallProjectCard />
                 <SmallProjectCard />

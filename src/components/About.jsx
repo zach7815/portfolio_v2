@@ -14,7 +14,7 @@ export default function About(){
 
     return(
         <>
-            <section className="about" style={darkStyle}>
+            <section className="about" style={darkStyle}  id="about">
                 <h2>About</h2>
                 <div className="aboutContents">
                 <div className="aboutText">

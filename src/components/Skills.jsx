@@ -19,7 +19,7 @@ function Skills(){
     }
 
 return (
-    <section style={darkStyle}>
+    <section style={darkStyle} id="skills">
         <h2> Skills</h2>
         <div className="skills" style={svgStyle}>
 

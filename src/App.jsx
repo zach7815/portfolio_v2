@@ -5,7 +5,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Skills from "./components/Skills"
 import Project from "./components/Project.jsx"
-import Contact from './components/projectsComponents/Contact'
+import Contact from './components/Contact'
 import './App.css'
 
 
