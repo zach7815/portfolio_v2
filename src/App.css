@@ -62,6 +62,7 @@ header{
 /* toggle css */
 .cm-toggle {
 	-webkit-appearance: none;
+  appearance: none;
 	-webkit-tap-highlight-color: transparent;
 	position: relative;
 	border: 0;
@@ -233,7 +234,7 @@ padding-left: 1.5rem;
 /* top left svg */
 .inner-Hero :nth-child(4){
   top: -2rem;
-left: -8rem;
+  left:-5.5rem;
 width: 17vw;
 height: 17vw;
 }
@@ -241,7 +242,6 @@ height: 17vw;
 .inner-Hero :nth-child(5){
   bottom: 5.5rem;
   left: 7rem;
-  width: clamp(2rem, 15vw, 12rem);
   height: 24vh;
   fill: #7C7CFC;
   width: 24vw;
@@ -545,7 +545,7 @@ align-self: center;
   text-decoration: none;
   font-weight: 500;
   color: black;
-  font-weight: bold;
+
 }
 
 .contact a:hover{
@@ -652,36 +652,19 @@ align-self: center;
 
 
 }
-
-@media screen and (min-width:990px){
-  /* center bottom */
-   .inner-Hero :nth-child(6){
-    top:7.5rem;
-  }
-  .skills{
-    gap:3rem
-  }
-.projectSection h3{
-  margin-bottom: 2rem;
-}
-
-  .smallPContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
+@media screen and (min-width:1628px){
+  .aboutText{
+    font-size: 1.8rem;
   }
 
-  .docIcon{
-    width: 2vw;
+  .inner-Hero{
+    height:28%;
   }
-
-
 }
 
 @media screen and (min-width:1200px){
   .aboutText{
-    font-size: 1.7rem;;
+    font-size: 1.7rem;
   }
    /* center bottom */
    .inner-Hero :nth-child(6){
@@ -726,17 +709,55 @@ align-self: center;
 
 }
 
-@media screen and (min-width:1628px){
-  .aboutText{
-    font-size: 1.8rem;;
+
+@media screen and (min-width:1005px) {
+  .inner-Hero :nth-child(8){
+    right:-4.75rem;
   }
 
-  .inner-Hero{
-    height:28%;
+
+}
+@media screen and (min-width:990px){
+  /* center bottom */
+   .inner-Hero :nth-child(6){
+    top:7.5rem;
   }
+
+  .inner-Hero :nth-child(4){
+    left: -8rem;
+
+  }
+  .skills{
+    gap:3rem
+  }
+.projectSection h3{
+  margin-bottom: 2rem;
+}
+
+  .smallPContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .docIcon{
+    width: 2vw;
+  }
+
+
 }
 
 
+
+
+@media screen and (min-width:862px) {
+  /* bottom Right SVG Hero */
+  .inner-Hero :nth-child(8){
+    right:-3.75rem;
+  }
+
+}
 
 
 @media screen and (min-width:826px) {
@@ -747,13 +768,9 @@ align-self: center;
 
 }
 
-@media screen and (min-width:1005px) {
-  .inner-Hero :nth-child(8){
-    right:-4.75rem;
-  }
 
 
-}
+
 @media screen and (max-width:923px) {
   .inner-Hero :nth-child(7){
     left: 40rem;
@@ -761,13 +778,37 @@ align-self: center;
   }
 
 }
-@media screen and (max-width:807px) {
+@media screen and (max-width:771px) {
   .inner-Hero :nth-child(7){
-    left: 30rem;
-
+    left: 28rem;
   }
 
+.inner-Hero :nth-child(8){
+
+left: 28rem;
+
 }
+}
+
+@media screen and (max-width:771px) {
+  .inner-Hero :nth-child(8){
+    top: 10rem;
+    left: 34rem;
+}
+}
+
+@media screen and (max-width:807px) {
+  .inner-Hero :nth-child(7){
+    left: 35rem;
+  }
+
+.inner-Hero :nth-child(8){
+  top: 9rem;
+left: 36rem;
+
+}
+}
+
 @media screen and (max-width:595px) {
   .inner-Hero :nth-child(7){
     left: 25rem;
