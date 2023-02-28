@@ -748,7 +748,13 @@ align-self: center;
 
 }
 
+@media screen and (max-width:923px) {
+  .inner-Hero :nth-child(7){
+    left: 40rem;
 
+  }
+
+}
 
 
 @media screen and (min-width:862px) {
@@ -771,55 +777,157 @@ align-self: center;
 
 
 
-@media screen and (max-width:923px) {
-  .inner-Hero :nth-child(7){
-    left: 40rem;
 
-  }
+@media screen and (max-width: 806px) {
 
-}
-@media screen and (max-width:771px) {
-  .inner-Hero :nth-child(7){
-    left: 28rem;
-  }
-
-.inner-Hero :nth-child(8){
-
-left: 28rem;
-
-}
-}
-
-@media screen and (max-width:771px) {
   .inner-Hero :nth-child(8){
-    top: 10rem;
-    left: 34rem;
-}
+    top:10rem;
+  left: 37rem;
 }
 
-@media screen and (max-width:807px) {
-  .inner-Hero :nth-child(7){
-    left: 35rem;
-  }
+.inner-Hero :nth-child(7){
+left:35rem
+}
+
+}
+
+
+@media screen and (max-width:779px) {
+
+.inner-Hero:nth-child(7){
+  left: 30rem;
+}
 
 .inner-Hero :nth-child(8){
-  top: 9rem;
-left: 36rem;
-
-}
+  top: 10rem;
+  left: 31rem;
 }
 
-@media screen and (max-width:595px) {
+.inner-Hero:nth-child(3){
+  right:20rem;
+}
+
+}
+
+
+@media screen and (max-width:722px) {
+  .inner-Hero :nth-child(3){
+    right:30rem;
+  }
+  .inner-Hero :nth-child(4){
+    left:-3.5rem;
+  }
+}
+
+
+@media screen and (max-width:667px){
+  .inner-Hero :nth-child(8){
+    left:28rem;
+  }
   .inner-Hero :nth-child(7){
-    left: 25rem;
+    left:32rem;
+  }
+}
 
+@media screen and (max-width:605px){
+  .inner-Hero :nth-child(8){
+    left:26rem;
+  }
+  .inner-Hero :nth-child(7){
+    left:28rem;
+  }
+}
+
+@media screen and (max-width:579px){
+  .inner-Hero :nth-child(8){
+    left:24rem;
+
+  }
+  .inner-Hero :nth-child(7){
+    left:27rem;
+  }
+  .inner-Hero :nth-child(3){
+    right:25rem;
   }
 
 }
-@media screen and (max-width:498px) {
+
+
+
+@media screen and (max-width:541px){
+  .inner-Hero :nth-child(8){
+    left:22rem;
+
+  }
   .inner-Hero :nth-child(7){
-    left: 22rem;
+    left:27rem;
+  }
+}
+
+@media screen and (max-width:519px){
+  .inner-Hero :nth-child(8){
+    left:21rem;
+    top:10.5rem;
+
+  }
+  .inner-Hero :nth-child(7){
+    left:24rem;
+  }
+}
+
+@media screen and (max-width:497px){
+  .inner-Hero :nth-child(8){
+    left:19rem;
+
+  }
+  .inner-Hero :nth-child(7){
+    left:21rem;
+  }
+}
+
+@media screen and (max-width:474px){
+  .inner-Hero :nth-child(3){
+    right: 22rem;
+
+  }
+}
+
+@media screen and (max-width:451px){
+  .inner-Hero :nth-child(8){
+    left:17rem;
+
+  }
+}
+
+@media screen and (max-width:405px){
+  .inner-Hero :nth-child(8){
+  left: 16rem;
+top: 11.5rem;
 
   }
 
+  .inner-Hero :nth-child(7){
+    left: 20rem;
+  }
+  .inner-Hero :nth-child(3){
+      right:18rem;
+  }
+  .inner-Hero :nth-child(4){
+    left:-2rem;
+    top:-1rem;
+  }
+}
+
+
+@media screen and (max-width:375px){
+  .inner-Hero :nth-child(8){
+    left:14rem;
+    top:12rem;
+
+  }
+
+  .inner-Hero :nth-child(7){
+    left:15rem;
+    left:18rem;
+  }
 }
