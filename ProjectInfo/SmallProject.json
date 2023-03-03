@@ -1,0 +1,26 @@
+[
+    {
+        "githubURL":"https://github.com/zach7815/SimpleNoteTaker",
+        "liveLink":"https://zach7815.github.io/SimpleNoteTaker/",
+        "title":"Simple Note Taking App",
+        "about":"A simple note taking app. It is a front end app that allows users to add notes, delete notes. It also time stamps when the note is created.",
+        "technologies":["JavaScript", "CSS", "HTML5"]
+    },
+    {
+        "githubURL":"https://github.com/zach7815/Calculator",
+        "liveLink":"https://zach7815.github.io/Calculator/",
+        "title":"Vanilla JS Calculator",
+        "about":"A Vanilla JS project that is modelled on the mac default calculator. It allows users to do all the basic operations. It allows users to continuously add, subtract, divide or multiply.",
+        "technologies":["JavaScript", "CSS", "HTML5"]
+    },
+
+    {
+        "githubURL":"https://github.com/zach7815/faq-accordian-FEM",
+        "liveLink":"https://zach7815.github.io/faq-accordian-FEM/",
+        "title":"Mock FAQ Accordian",
+        "about":"A simple FAQ page for an imaginery company. Based on a Frontend Mentor challenge. It uses flexbox to help it make it responsive ",
+        "technologies":["JavaScript", "CSS", "HTML5"]
+    }
+
+
+]

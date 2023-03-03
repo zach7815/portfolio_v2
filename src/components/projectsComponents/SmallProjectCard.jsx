@@ -5,7 +5,7 @@ import ExternalLink from "./externalSite";
 import {useTheme} from '../ThemeContext.jsx'
 
 
-function SmallProjectCard(){
+function SmallProjectCard({githubURL, liveLink, title, about, technologies}){
 
     const darkTheme = useTheme();
     const smallCardStyling={
@@ -22,20 +22,20 @@ function SmallProjectCard(){
         <div className="iconsRight">
 
 
-       <a href="" target="blank"><SmallGithub style={svgStyling}/></a>
-       <a href="" target="blank"><ExternalLink/></a>
+       <a href={githubURL} target="_blank"><SmallGithub style={svgStyling}/></a>
+       <a href={liveLink} target="_blank"><ExternalLink/></a>
         </div>
         </div>
 
-        <h4>Dummy Small Project</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod assumenda aliquid eveniet ad ut odit
-        vel repudiandae? Magni rem inventore minima? Sit temporibus autem perferendis mollitia, quis placeat saepe alias!</p>
+        <h4>{title}</h4>
+        <p>{about}</p>
         <div className="technologies smallPtech">
-        <span className="tech">tech one </span>
-        <span className="tech">tech two </span>
-        <span className="tech">tech three </span>
-        <span className="tech">tech four </span>
-        <span className="tech">tech five </span>
+
+        {technologies.map(tech=>{
+            return(
+                <span className="tech">{tech}</span>
+            )
+        })}
             </div>
         </div>
     )

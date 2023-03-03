@@ -2,6 +2,8 @@ import React from "react";
 import MobileDetailedProject from "./projectsComponents/MobileDetailedProject";
 import SmallProjectCard from "./projectsComponents/SmallProjectCard.jsx"
 import {useTheme} from './ThemeContext.jsx'
+import SmallProject from '/ProjectInfo/SmallProject.json'
+import LargeProject from '/ProjectInfo/LargeProject.json'
 
 
 function Project(){
@@ -19,12 +21,33 @@ function Project(){
         <>
             <section style={darkStyle } className="projectSection" id="projects">
                 <h2>Projects</h2>
-                <MobileDetailedProject/>
+                {LargeProject.map(project=>{
+                   return(<MobileDetailedProject
+                    imagesrc={project.imagesrc}
+                    imageAlt={project.imageAlt}
+                    header={project.header}
+                    description={project.description}
+                    topFeatures={project.topFeatures}
+                    technologies={project.technologies}
+                    githubURL={project.githubURL}
+                    liveURL={project.liveURL}
+                   />)
+                })}
+
+
                 <h3>Other Noteworthy Projects</h3>
                 <div className="smallPContainer">
-                <SmallProjectCard />
-                <SmallProjectCard />
-                <SmallProjectCard />
+               {SmallProject.map(project=>{
+                return(
+                <SmallProjectCard
+                    githubURL={project.githubURL}
+                    liveLink={project.liveLink}
+                    title={project.title}
+                    about={project.about}
+                    technologies={project.technologies}
+                />
+                )
+               })}
                 </div>
             </section>
 

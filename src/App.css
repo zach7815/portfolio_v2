@@ -380,6 +380,7 @@ div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1):hover>*
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .projectContainer, .smallProjCard{
@@ -405,7 +406,6 @@ div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1):hover>*
   text-align: left;
   padding: 0;
   margin: 0 0 1rem 0;
-  line-height: 1.5;
 }
 
 .projectContainer ul li{
@@ -451,6 +451,11 @@ div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1):hover>*
   cursor: pointer;
   color: inherit;
 }
+
+.projectbtn >* a{
+  text-decoration: none;
+  color: inherit;
+}
 .projectbtn >*:hover{
   background-color: var(--accent-font-col);
   color: var(--light-bg-col);
@@ -468,7 +473,6 @@ div.skill:nth-child(6) > svg:nth-child(1) > g:nth-child(1):hover>*
 
 .smallProjCard{
   border: solid 1px black;
-  height: fit-content;
   margin: 1rem 0 2rem 1rem;
   border-radius: 5px;
   width: 80%;
@@ -617,14 +621,16 @@ align-self: center;
     height: fit-content;
     width: 80%;
     gap:1rem;
-    max-height: 377px;
     max-width: 964px;
 
   }
 
   .smallPContainer{
     margin: 0 1rem 0 0;
+    display: flex;
+    flex-flow: row wrap;
   }
+
 
   .projectContainer img{
   grid-row-start: 1;
@@ -705,6 +711,7 @@ align-self: center;
 
   .smallProjCard{
     max-width: 350px;
+
   }
 
 }
@@ -735,7 +742,6 @@ align-self: center;
 }
 
   .smallPContainer{
-    display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;

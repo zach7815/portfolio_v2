@@ -1,11 +1,13 @@
 import React from "react";
-import mobileProfImg from "/src/images/WeatherDB_screenshot.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {useTheme} from '../ThemeContext'
 
 
-function MobileDetailedProject(){
+function MobileDetailedProject({imagesrc, imageAlt, header,
+    description, topFeatures, technologies,
+    githubURL, liveURL
+}){
     const darkTheme = useTheme();
 
     const colorStyling={
@@ -22,29 +24,30 @@ function MobileDetailedProject(){
     return (
         <div className="projectContainer" style={bigCardStyling}>
         <div className="projDetail">
-        <h3> Dummy Header</h3>
-        <p>A weather dashboard that uses React, Node JS, React and three different APIs. The Weather app displays the users current locations current weather and next 5 days weather.</p>
+        <h3> {header}</h3>
+        <p>{description}</p>
         <h4>Top 3 features</h4>
-        <ul>
-            <li>feature one</li>
-            <li>feature 2</li>
-            <li>feature 3</li>
-        </ul>
+       {topFeatures.map(feature=>{
+        return(
+            <ul>
+                <li>{feature}</li>
+            </ul>
+        )
+       })}
         </div>
-        <img src={mobileProfImg} alt="dummy image"/>
+        <img src={imagesrc} alt={imageAlt}/>
         <div className="stack">
         <h4>Technologies used</h4>
         <div className="technologies">
-        <span className="tech">tech one </span>
-        <span className="tech">tech two </span>
-        <span className="tech">tech three </span>
-        <span className="tech">tech four </span>
-        <span className="tech">tech five </span>
+
+        {technologies.map(tech=>{
+           return <span className="tech">{tech}</span>
+        })}
         </div>
         </div>
 <div className="projectbtn" style={colorStyling}>
-<button>Live Site</button>
-    <button>  <FontAwesomeIcon icon={faGithub} />Github</button>
+<button><a href={liveURL}  target="_blank">Live Site</a></button>
+    <button>  <a href={githubURL} target="_blank"><FontAwesomeIcon icon={faGithub} /> Github </a></button>
 </div>
 
 

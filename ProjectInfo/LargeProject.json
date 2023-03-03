@@ -1,0 +1,38 @@
+[
+    {
+        "imagesrc":"/src/images/WeatherDB_screenshot.png",
+        "imageAlt":"screenshot of weather dashboard created by Zach",
+        "header":"Weather Dashboard",
+        "description":"A weather dashboard that uses React, Node JS, React and three different APIs. The Weather app displays the users current locations current weather and next 5 days weather.  ",
+        "topFeatures":["Get weather for user’s current location",
+ "Get weather for searched location",
+ "Display background image of current location or search term."],
+        "technologies":["React", "JavaScript", "CSS", "Node JS", "Express JS"],
+        "githubURL":"https://github.com/zach7815/WeatherDashboard-Frontend/tree/Fullstack",
+        "liveURL":"https://weather-dashboard.onrender.com/"
+    },
+    {
+        "imagesrc":"src/images/ToDoApp_screenshot.png",
+        "imageAlt":"a screenshot of a a To Do App created by Zach",
+        "header":"React ToDo App",
+        "description":"A simple CRUD todo app built from scratch based on a FrontEnd mentor design. It allows users to create todos, mark them completed and delete one or all completed items",
+        "topFeatures":["Users can add, mark completed, and delete to do's which are then stored in a Mongo DB cluster ",
+ "User can filter todos by all, active, and completed",
+ "User can toggle between light and dark mode"],
+        "technologies":["React", "JavaScript", "Sass", "Node JS", "Express JS", "Mongo DB"],
+        "githubURL":"https://github.com/zach7815/ToDoList",
+        "liveURL":"https://todo-app-frontend-obe0.onrender.com/"
+    },
+    {
+        "imagesrc":"src/images/SearrchBar_screenshot.png",
+        "imageAlt":"screenshot of country search app created by Zach",
+        "header":"Vanilla JS Country Search Bar",
+        "description":"A simple searchbar app that allows users to search different countrys and find different facts. It uses a free API to gather the data.",
+        "topFeatures":["Users can scroll through all the countries of the world and learn different facts ",
+ "Users can search for a particular country by usual a partial name or complete name",
+ "User can select a random country"],
+        "technologies":["JavaScript", "CSS", "HTML"],
+        "githubURL":"https://github.com/zach7815/country-Fact-search-bar",
+        "liveURL":"https://zach7815.github.io/country-Fact-search-bar/"
+    }
+]
