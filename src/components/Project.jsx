@@ -22,7 +22,9 @@ function Project(){
             <section style={darkStyle } className="projectSection" id="projects">
                 <h2>Projects</h2>
                 {LargeProject.map(project=>{
+
                    return(<MobileDetailedProject
+                    key={project.key}
                     imagesrc={project.imagesrc}
                     imageAlt={project.imageAlt}
                     header={project.header}
@@ -40,6 +42,8 @@ function Project(){
                {SmallProject.map(project=>{
                 return(
                 <SmallProjectCard
+                    key={project.ke
+                    }
                     githubURL={project.githubURL}
                     liveLink={project.liveLink}
                     title={project.title}

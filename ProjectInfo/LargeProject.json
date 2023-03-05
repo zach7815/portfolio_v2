@@ -1,6 +1,7 @@
 [
     {
-        "imagesrc":"/src/images/WeatherDB_screenshot.png",
+        "key":1,
+        "imagesrc":"/images/WeatherDB_screenshot.png",
         "imageAlt":"screenshot of weather dashboard created by Zach",
         "header":"Weather Dashboard",
         "description":"A weather dashboard that uses React, Node JS, React and three different APIs. The Weather app displays the users current locations current weather and next 5 days weather.  ",
@@ -12,7 +13,8 @@
         "liveURL":"https://weather-dashboard.onrender.com/"
     },
     {
-        "imagesrc":"src/images/ToDoApp_screenshot.png",
+        "key":2,
+        "imagesrc":"/images/ToDoApp_screenshot.png",
         "imageAlt":"a screenshot of a a To Do App created by Zach",
         "header":"React ToDo App",
         "description":"A simple CRUD todo app built from scratch based on a FrontEnd mentor design. It allows users to create todos, mark them completed and delete one or all completed items",
@@ -24,7 +26,8 @@
         "liveURL":"https://todo-app-frontend-obe0.onrender.com/"
     },
     {
-        "imagesrc":"src/images/SearrchBar_screenshot.png",
+        "key":3,
+        "imagesrc":"/images/SearrchBar_screenshot.png",
         "imageAlt":"screenshot of country search app created by Zach",
         "header":"Vanilla JS Country Search Bar",
         "description":"A simple searchbar app that allows users to search different countrys and find different facts. It uses a free API to gather the data.",

@@ -26,10 +26,10 @@ function Navigation(){
         <li>projects</li>
         <li>contact</li>
     </ul>
-        <button className="download">Resumé</button>
+        <a  href="" download="/images/mobile-profile-Img.png" className="download">Resumé</a>
     </div>
 
-    menuMask= <div className="menuMask"></div>
+    menuMask= <div className="menuMask" onClick={()=>{setShowMenu(!showMenu)}} ></div>
     }
 
 
@@ -43,7 +43,7 @@ function Navigation(){
        />
         <nav className="nav">
 
-       {menuMask}
+       {menuMask }
        {menu}
        </nav>
         </>

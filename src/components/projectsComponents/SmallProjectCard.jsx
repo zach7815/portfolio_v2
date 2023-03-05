@@ -5,7 +5,7 @@ import ExternalLink from "./externalSite";
 import {useTheme} from '../ThemeContext.jsx'
 
 
-function SmallProjectCard({githubURL, liveLink, title, about, technologies}){
+function SmallProjectCard({key,githubURL, liveLink, title, about, technologies}){
 
     const darkTheme = useTheme();
     const smallCardStyling={
@@ -16,7 +16,7 @@ function SmallProjectCard({githubURL, liveLink, title, about, technologies}){
         fill:darkTheme?"white":"black",
     }
     return (
-        <div className="smallProjCard" style={smallCardStyling}>
+        <div className="smallProjCard" key={key} style={smallCardStyling}>
         <div className="icons">
         <DocumentIcon style={svgStyling} className="docIcon"/>
         <div className="iconsRight">

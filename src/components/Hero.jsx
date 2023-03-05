@@ -18,7 +18,7 @@ export default function(){
         <section className="Hero" style={darkStyle} id="home">
             <div className="inner-Hero">
                 <h1>hi i'm zach</h1>
-                    <p>I am a <span className="highlight"> Self Taught Developer</span> who is loves to learn and build
+                    <p>I am a <span className="highlight"> Self Taught Developer</span> who loves to learn and build
                     things.</p>
                    <BottomTop />
                    <BottomLeft />

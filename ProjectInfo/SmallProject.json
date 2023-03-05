@@ -1,5 +1,6 @@
 [
     {
+        "key":1,
         "githubURL":"https://github.com/zach7815/SimpleNoteTaker",
         "liveLink":"https://zach7815.github.io/SimpleNoteTaker/",
         "title":"Simple Note Taking App",
@@ -7,6 +8,7 @@
         "technologies":["JavaScript", "CSS", "HTML5"]
     },
     {
+        "key":2,
         "githubURL":"https://github.com/zach7815/Calculator",
         "liveLink":"https://zach7815.github.io/Calculator/",
         "title":"Vanilla JS Calculator",
@@ -15,6 +17,7 @@
     },
 
     {
+        "key":3,
         "githubURL":"https://github.com/zach7815/faq-accordian-FEM",
         "liveLink":"https://zach7815.github.io/faq-accordian-FEM/",
         "title":"Mock FAQ Accordian",

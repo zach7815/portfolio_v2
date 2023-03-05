@@ -4,7 +4,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {useTheme} from '../ThemeContext'
 
 
-function MobileDetailedProject({imagesrc, imageAlt, header,
+function MobileDetailedProject({key,imagesrc, imageAlt, header,
     description, topFeatures, technologies,
     githubURL, liveURL
 }){
@@ -22,15 +22,16 @@ function MobileDetailedProject({imagesrc, imageAlt, header,
 
 
     return (
-        <div className="projectContainer" style={bigCardStyling}>
+        <div className="projectContainer" key={key} style={bigCardStyling}>
         <div className="projDetail">
         <h3> {header}</h3>
         <p>{description}</p>
         <h4>Top 3 features</h4>
        {topFeatures.map(feature=>{
+        const key =Math.round(Math.random()*6)
         return(
-            <ul>
-                <li>{feature}</li>
+            <ul key={key}>
+                <li >{feature}</li>
             </ul>
         )
        })}
@@ -41,7 +42,8 @@ function MobileDetailedProject({imagesrc, imageAlt, header,
         <div className="technologies">
 
         {technologies.map(tech=>{
-           return <span className="tech">{tech}</span>
+            const key =Math.round(Math.random()*6)
+           return <span  key={key} className="tech">{tech}</span>
         })}
         </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import profileImg from "../images/desktop-profile-Img.png"
-import mobileProfImg from "../images/mobile-profile-Img.png"
+import profileImg from "/public/images/desktop-profile-Img.png"
+import mobileProfImg from "/public/images/mobile-profile-Img.png"
 import  {useTheme} from "./ThemeContext"
 
 
@@ -24,7 +24,7 @@ export default function About(){
                 I enjoyed learning the limits of what you could do with these pages.
                 </p>
                 <p className="mainText">
-                In my last job in the UK I was in charge of the charity’s website. It was a WordPress and I enjoyed learning about the technical limits of the site, finding bugs and working with external developers to troubleshoot them. At the same time in my time off I bought a web development course on Udemy and haven’t looked back since.
+                In my last job in the UK, I was in charge of the charity’s website. It was a WordPress website and I enjoyed learning about the technical limits of the site, finding bugs and working with external developers to troubleshoot them. At the same time in my time off I bought a web development course on Udemy and haven’t looked back since.
                 </p>
                 </div>
                 <picture>
