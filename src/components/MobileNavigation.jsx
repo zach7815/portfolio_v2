@@ -26,7 +26,7 @@ function Navigation(){
         <li>projects</li>
         <li>contact</li>
     </ul>
-        <a  href="" download="/images/mobile-profile-Img.png" className="download">Resumé</a>
+        <a  href="" download="/personalP_V2/Zachariah KB - 03.23.pdf" className="download">Resumé</a>
     </div>
 
     menuMask= <div className="menuMask" onClick={()=>{setShowMenu(!showMenu)}} ></div>
