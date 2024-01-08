@@ -42,7 +42,7 @@ function Project(){
                {SmallProject.map(project=>{
                 return(
                 <SmallProjectCard
-                    key={project.ke
+                    key={project.key
                     }
                     githubURL={project.githubURL}
                     liveLink={project.liveLink}
