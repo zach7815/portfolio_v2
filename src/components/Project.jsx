@@ -18,7 +18,7 @@ function Project(){
 
 
     return(
-        <>
+        <div>
             <section style={darkStyle } className="projectSection" id="projects">
                 <h2>Projects</h2>
                 {LargeProject.map(project=>{
@@ -32,7 +32,7 @@ function Project(){
                     topFeatures={project.topFeatures}
                     technologies={project.technologies}
                     githubURL={project.githubURL}
-                    liveURL={project.liveURL}
+                    liveURL={project.liveURL||null}
                    />)
                 })}
 
@@ -55,7 +55,7 @@ function Project(){
                 </div>
             </section>
 
-        </>
+        </div>
     )
 }
 

@@ -9,8 +9,8 @@
  "Get weather for searched location",
  "Display background image of current location or search term."],
         "technologies":["React", "JavaScript", "CSS", "Node JS", "Express JS"],
-        "githubURL":"https://github.com/zach7815/WeatherDashboard-Frontend/tree/Fullstack",
-        "liveURL":"https://weather-dashboard.onrender.com/"
+        "githubURL":"https://github.com/zach7815/WeatherDashboard-Frontend/tree/Fullstack"
+
     },
     {
         "key":2,

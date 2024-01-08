@@ -48,7 +48,7 @@ function MobileDetailedProject({key,imagesrc, imageAlt, header,
         </div>
         </div>
 <div className="projectbtn" style={colorStyling}>
-<button><a href={liveURL}  target="_blank">Live Site</a></button>
+{liveURL&&<button><a href={liveURL}  target="_blank">Live Site</a></button>}
     <button>  <a href={githubURL} target="_blank"><FontAwesomeIcon icon={faGithub} /> Github </a></button>
 </div>
 
