@@ -3,6 +3,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/zachkbde/public_html/
-    - /bin/cp dist/ index.html $DEPLOYPATH
-   - /bin/cp -R dist/images/* $DEPLOYPATH
-   - /bin/cp dist/assets/ index-096d005a.css $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+   - /bin/cp -R public_html/images $DEPLOYPATH
+   - /bin/cp assets/ index-096d005a.css $DEPLOYPATH
