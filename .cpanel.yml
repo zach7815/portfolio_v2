@@ -1,5 +1,5 @@
- ---
+---
 deployment:
   tasks:
-  - export DEPLOYPATH=/home/zachkbdev/public_html/
-  - /bin/cp -R dist/* $DEPLOYPATH
+    - export DEPLOYPATH=/home/zachkbde/public_html/
+    - /bin/cp -R dist/* $DEPLOYPATH
